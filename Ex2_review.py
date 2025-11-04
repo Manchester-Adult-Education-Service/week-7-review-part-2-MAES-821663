@@ -26,6 +26,14 @@ print("-------------------------------------------\n"
 # Output: 7 is odd
 #
 # Write your code below:
+# num = int(input("Enter a number:\n"))
+
+# if num % 2 == 0:
+#     print("The number is even!")
+# elif num % 2 != 0:
+#     print("The number is odd!")
+# else:
+#     print("I didn't understand that, please try again.")
 
 
 # -------------------------------------------
@@ -59,6 +67,17 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
+# test_score = int(input("Enter your test score:\n"))
+# while True:
+#     if test_score >= 70:
+#         print("Excellent work!")
+#     elif test_score < 70 and test_score <= 69:
+#         print("Good effort.")
+#     elif test_score <69 and test_score >= 1:
+#         print("Needs improvement")
+#     else:
+#         print("Please enter an appropriate test score")
+#     break
 
 # -------------------------------------------
 # Submitting Your Work
@@ -95,8 +114,13 @@ print("-------------------------------------------\n"
 # Blast off!
 #
 # Write your code below:
+# num1 = int(input("Enter a number:\n"))
 
+# while num1 > 1:
+#     num1 -= 1
+#     print(num1)
 
+# print("Blast off!")
 # -------------------------------------------
 # Submitting Your Work
 # -------------------------------------------
@@ -129,8 +153,10 @@ print("-------------------------------------------\n"
 # 3 x 10 = 30
 #
 # Write your code below:
+# num2 = int(input("Enter a number:\n"))
 
-
+# for i in range(1, 11):
+#     print(f"{i} * {num2} = {i * num2}")
 # -------------------------------------------
 # Submitting Your Work
 # -------------------------------------------
@@ -166,6 +192,9 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
+while guess != answer:
+    if guess > answer:
+        
 
 # -------------------------------------------
 # Submitting Your Work

@@ -27,6 +27,12 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
+num = int(input("Enter a number:\n"))
+if num % 2 == 0:
+    print("The number is even!")
+else:
+    print("The number is odd!")
+
 
 # -------------------------------------------
 # Submitting Your Work
@@ -59,6 +65,15 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
+score = int(input("Enter your score:\n"))
+if score >= 70:
+    print("Excellent!")
+elif score >= 50 and score <=69:
+    print("Good effort!") 
+elif score <50 and score >= 1:
+    print("Needs improvement.")
+else:
+    print("Please enter your score")
 
 # -------------------------------------------
 # Submitting Your Work
@@ -96,6 +111,11 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
+num1 = int(input("Enter a number:\n"))
+while num1 > 1:
+    num1 -= 1
+    print(num1)
+print("Blast off!")
 
 # -------------------------------------------
 # Submitting Your Work
@@ -130,6 +150,11 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
+num2 = int(input("Enter a number:\n"))
+
+for i in range(1, 11):
+    print(f"{num2} * {i} = {num2 * i}")
+print("gap")
 
 # -------------------------------------------
 # Submitting Your Work
@@ -165,6 +190,20 @@ print("-------------------------------------------\n"
 # Correct! Well done.
 #
 # Write your code below:
+
+answer = 8
+
+print("Try and guess the number i'm thinking of!\n")
+guess = int(input("Enter a guess!:\n"))
+
+while guess != answer:
+    if guess < answer:
+        guess = int(input("Try higher...\n"))
+    elif guess > answer:
+        guess = int(input("A little lower...\n"))
+
+if guess == answer:
+    print("Thats it!")    
 
 
 # -------------------------------------------
@@ -202,8 +241,17 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
+answer = 0
+num1 = int(input("Enter a number 1: "))
+num2 = int(input("Enter a number 1: "))
+num3 = int(input("Enter a number 1: "))
+num4 = int(input("Enter a number 1: "))
+num5 = int(input("Enter a number 1: "))
+list1 = [num1, num2, num3, num4, num5]
 
-
+for i in list1:
+    answer += i
+print(answer)
 
 # Extension 2:
 # -------------------------------------------
@@ -223,7 +271,11 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
-
+pass_ = "python123"
+guess = input("Enter the password:\n")
+while guess.strip().lower() != pass_:
+    guess = input("Incorrect, try again:\n")
+print("Correct!")
 
 
 # -------------------------------------------
@@ -252,7 +304,34 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
+print("""
+Welcome to my program!
+    Please select an option:
+""")
 
+while True:
+    print("""
+    1. count from 0 to 10
+    2. Show even numbers between 1 and 20
+    3. Exit
+    """)
+    choice = int(input("Please make your choice:\n"))
+    if choice == 1:
+        print("")
+        for i in range(1, 11):
+            print(i)
+        print("Please make a your next choice:\n")
+    elif choice == 2:
+        print("")
+        for i in range(2, 20, 2):
+            print(i)
+        print("Please make a your next choice:\n")
+    elif choice == 3:
+        print("Thank you for using this program!")
+        print("Goodbye!")
+        exit()
+    else:
+        print("Please make one of the choices above using the appropriate number:\n")
 
 
 # -------------------------------------------
